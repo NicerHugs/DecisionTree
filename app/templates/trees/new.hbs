@@ -1,0 +1,22 @@
+{{outlet}}
+<form>
+  {{input placeholder="Tree Name" value=model.name}}
+  <div class="tree">
+    <p>Nodes: </p>
+    {{#each node in model.nodes}}
+      <div class="node">
+        {{input value=node.name placeholder="Node Name"}}
+        {{#each decision in node.decisions}}
+          <div class="decision">
+            {{input value=decision.name placeholder="Decision Name"}}
+            <button {{action "removeDecision" node decision}}>Remove Decision</button>
+          </div>
+        {{/each}}
+      </div>
+      <button {{action "addDecision" node}}>add a decision</button>
+      <button {{action "removeNode" node}}>remove Node</button>
+    {{/each}}
+  </div>
+  <button {{action "addNode"}}>add a new node</button>
+  <button {{action "findNode"}} {{bind-attr disabled="model.noNodes"}}>use an existing node</button>
+</form>
