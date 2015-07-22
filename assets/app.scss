@@ -1,0 +1,33 @@
+@import 'main';
+
+.clearfix {
+  &::after {
+    content: '';
+    display: block;
+    clear: both;
+  }
+}
+
+.tree-form {
+  background-color: pink;
+  float: left;
+  width: 50%;
+}
+
+.tree-view {
+  background-color: red;
+  float: left;
+  width: 50%;
+}
+
+.node {
+  &::after {
+    content: '';
+    display: block;
+    clear: both;
+  }
+}
+
+.decision {
+  float: left;
+}

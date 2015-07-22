@@ -1,0 +1,52 @@
+{
+  "trees": [
+    {
+      "id": 1,
+      "name": "Tree 1",
+      "nodes": [
+        {
+          "id": 1,
+          "name": "Node 1",
+          "decisions": [
+            {
+              "id": 1,
+              "name": "Decision 1",
+              "next": 2
+            },
+            {
+              "id": 3,
+              "name": "Decision 3",
+              "next": 3
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "name": "Node 2",
+          "decisions": [
+            {
+              "id": 2,
+              "name": "Decision 2",
+              "next": 3
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "name": "Node 3",
+          "decisions": [
+            {
+              "id": 4,
+              "name": "Decision 4",
+              "next": 4
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "name": "Node 4"
+        }
+      ]
+    }
+  ]
+}
